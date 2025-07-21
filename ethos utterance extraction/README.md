@@ -1,4 +1,4 @@
-# Word Collocation
+# Ethos utterance extraction 
 
 ## Preparation
 
@@ -27,17 +27,7 @@ Several articles were very similar, e.g. two articles were exactly the same, exc
 all articles  with Levenshtein distance smaller than 0.37, that means any articles that matches 63% than another one,
 and that is shorter, was removed.
 
-    SAMENVATTING:
-    
-    Magazinelezers proeven en keuren. Deze week: graskaas
-    
-    VOLLEDIGE TEKST:
-    
-    ...
-
-The 0.37 was determined by plotting the distribution of Levenshtein distance as well:
-
-![Algemeen Dagblad](images/levenshtein.png) 
+The 0.37 was determined by plotting the distribution of Levenshtein distance as well.
 
 # Manual annotation
 
