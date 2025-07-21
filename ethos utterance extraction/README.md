@@ -15,8 +15,7 @@ annotated for personal pronouns and whether the entire article is or isn't to be
  * [01. Read downloads from Nexis Uni.ipynb](notebooks/01.%20Read%20downloads%20from%20Nexis%20Uni.ipynb)
  * [02. Removal of similar articles.ipynb](notebooks/02.%20Removal%20of%20similar%20articles.ipynb)
 
-We've manually downloaded 66,197 articles of `de Volkskrant`, `AD/Algemeen Dagblad` and `NRC Handelsblad` from
-[Nexis Lexis](http://proxy-ub.rug.nl/login?url=http://www.nexisuni.com) for these dates as docx-files, as we
+We've manually downloaded 66,197 articles of `de Volkskrant`, `AD/Algemeen Dagblad` and `NRC Handelsblad` for these dates as docx-files, as we
 found this was the cleanest format.
 
 | paper            | dates (count)                                                |
@@ -53,13 +52,12 @@ The 0.37 was determined by plotting the distribution of Levenshtein distance as 
 We applied the quote model (see quotemodels repository) on these articles and selected those with personal pronouns
 outside of detected quotes as personal, the others are considered non-personal without further inspection. The 13,692
 articles were considere potentially personal, and the pronouns outside of detected quotes were marked but also manually
-corrected. The automatic annotations are found [here](preannotations/) and the corrections
-[here](personal-pronoun-annotations.json). The former preannotations also contains the non-personal articles.  
+corrected. The automatic annotations can be shared with other researchers upon reasonable request. The preannotations also contains the non-personal articles.  
  
- * [03. Run quote, POS and dependency detection.ipynb](notebooks/03.%20Run%20quote,%20POS%20and%20dependency%20detection.ipynb)
- * [04. Labelstudio export for mannual annotation of personal pronouns.ipynb](notebooks/04.%20Labelstudio%20export%20for%20mannual%20annotation%20of%20personal%20pronouns.ipynb)
+ * [03. Run quote, POS and dependency detection.ipynb]
+ * [04. Labelstudio export for mannual annotation of personal pronouns.ipynb]
 
-Metadata of all articles, including statistics on pronouns, can be found [here](results/article-metadata.xlsx)
+Metadata of all articles, including statistics on pronouns, can be found [here](data/reliable-and-relatable-journalists-dataset-II-metadata.csv)
 
 # Word collocations
 
@@ -73,27 +71,3 @@ shown in the figure below, which results in these two contexts due to the pronou
 | schrok        | toen, wel, even | ik    |               |           |
 |               |                 |       | leven         |  mijn     |
 
-
-![Example pronoun context](images/pronoun-context.svg)
-
- * [05. Dependency-collocation.ipynb](notebooks/05.%20Dependency-collocation.ipynb)
-
-All personal contexts can be found [here](results/personal-contexts.xlsx)
-
-## Statistics
-
-## Percentage of articles that is personal
-
-![Percentage personal per page](results/personal-occurrence-page.png)
-![Percentage personal per section](results/personal-occurrence-section.png)
-![Percentage personal per paper](results/personal-occurrence-paper.png)
-![Percentage personal per year](results/personal-occurrence-year.png)
-![Percentage personal per weekday](results/personal-occurrence-day%20of%20week.png)
-
-## Distribution of ik and we
-
-![Distribution of ik/we pronouns per year](results/pronoun-occurrence-year.png)
-![Distribution of ik/we pronouns per weekday](results/pronoun-occurrence-day%20of%20week.png)
-![Distribution of ik/we pronouns per paper](results/pronoun-occurrence-paper.png)
-![Distribution of ik/we pronouns per section](results/pronoun-occurrence-section.png)
-![Distribution of ik/we pronouns per page](results/pronoun-occurrence-page.png)
