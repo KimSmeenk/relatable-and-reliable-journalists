@@ -16,15 +16,7 @@ annotated for personal pronouns and whether the entire article is or isn't to be
  * [02. Removal of similar articles.ipynb](notebooks/02.%20Removal%20of%20similar%20articles.ipynb)
 
 We've manually downloaded 66,197 articles of `de Volkskrant`, `AD/Algemeen Dagblad` and `NRC Handelsblad` for these dates as docx-files, as we
-found this was the cleanest format.
-
-| paper            | dates (count)                                                |
-|:-----------------|:-------------------------------------------------------------|
-| Algemeen Dagblad | ![Algemeen Dagblad](images/dates-paper-Algemeen Dagblad.png) |
-| NRC Handelsblad  | ![NRC Handelsblad](images/dates-paper-NRC Handelsblad.png)   |
-| de Volkskrant    | ![de Volkskrant](images/dates-paper-de Volkskrant.png)       |
-
-Algemeen Dagblad and de Volkskrant start respectively in 1993 and 1995, instead of 1991, because there were
+found this was the cleanest format. Algemeen Dagblad and de Volkskrant start respectively in 1993 and 1995, instead of 1991, because there were
 no articles or significantly less compared to the rest of the time period.
 
 Opinion articles were identified as those from sections called `opinie`, `debat`, `trefpunt`, `forum`, `service`, `u-pagina`, `u pagina` and
@@ -71,3 +63,4 @@ shown in the figure below, which results in these two contexts due to the pronou
 | schrok        | toen, wel, even | ik    |               |           |
 |               |                 |       | leven         |  mijn     |
 
+Metadata of the ethos utterances including the words extracted via dependency parsing can be found [here](data/reliable-and-relatable-journalists-ethos-utterances-metadata.csv)
