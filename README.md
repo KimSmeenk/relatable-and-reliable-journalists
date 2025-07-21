@@ -1,4 +1,4 @@
-# relatable-and-reliable-journalists
+## Reliable and Relatable Journalists
 
 This repository contains code for analysis and annotated datasets that have been used for my PhD dissertation:
 
